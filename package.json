@@ -1,0 +1,35 @@
+{
+    "name": "tsl_html.v2.0.1",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "scripts": {
+        "clean": "rm dist/bundle.js",
+        "_start": "parcel src/index.html",
+        "start": "live-server public",
+        "build:tailwindcss": "npx tailwindcss build src/css/tailwindcss.css -o public/styles/tailwindcss.dist.css",
+        "build:css": "postcss src/css/*.css src/css/*.scss --dir public/styles --ext .css --watch"
+    },
+    "dependencies": {
+        "postcss": "^8.1.2",
+        "postcss-cli": "^8.1.0",
+        "postcss-import": "^13.0.0",
+        "tailwindcss": "^1.9.5"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.12.3",
+        "@babel/preset-env": "^7.12.1",
+        "autoprefixer": "^9.8.6",
+        "live-server": "^1.2.1",
+        "parcel-bundler": "^1.12.4",
+        "postcss-loader": "^4.0.4",
+        "postcss-modules": "^3.2.2",
+        "postcss-purgecss": "^2.0.3",
+        "postcss-scss": "^3.0.2",
+        "precss": "^4.0.0",
+        "sass": "^1.27.0"
+    }
+}

@@ -1,0 +1,37 @@
+$primary-color: white;
+$primary-mainGreen:'#38ABF7';
+$bg: black;
+
+h1 {
+  color: $primary-color;
+  background-color: $bg;
+}
+
+body {
+  font-size: 14px;
+
+}
+
+body,
+html,
+input {
+  font-family: "微软雅黑";
+}
+
+.site-nav {
+  @apply m-auto flex items-center justify-items-center justify-start h-full border-red-500 border-solid text-white;
+
+  .nav-item {
+    @apply w-32 text-center py-4 font-normal;
+    font-size: 16px;
+
+    a {
+      @apply block;
+      background: url(https://tiaoshuilang.net/modules/pc/default/images/sy6.png) no-repeat 0 50%;
+
+      &:hover {
+        @apply text-base
+      }
+    }
+  }
+}
